@@ -1,0 +1,16 @@
+.but{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: blueviolet;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+
+}
+.but:hover{
+    font-size: large;
+    background-color: blue;
+}
