@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<script>
+var i=0, n, sum=0, temp;
+function fun()
+{
+  n = parseInt(document.getElementById("n").value);
+  if(n)
+  {
+    document.getElementById("nVal").innerHTML = n;
+    document.getElementById("tme").innerHTML = i+1;
+    i++;
+    temp = document.getElementById("one");
+    temp.style.display = "none";
+    temp = document.getElementById("two");
+    temp.style.display = "block";
+  }
+}
+function add()
+{
+  if(i==n)
+  {
+    temp = document.getElementById("two");
+    temp.style.display = "none";
+    temp = document.getElementById("three");
+    temp.style.display = "block";
+  }
+  num = parseInt(document.getElementById("num").value);
+  if(num)
+  {
+    sum = sum + num;
+    document.getElementById("num").value = null;
+    document.getElementById("tme").innerHTML = i+1;
+    i++;
+  }
+}
+function res()
+{
+  document.getElementById("result").value = sum;
+}
+</script>
+</head>
+<body>
+
+<p id="one">Enter the Value of n: <input id="n">
+<button onclick="fun()">ENTER</button></p>
+<p id="two" style="display:none;">Enter <span id="nVal"></span> 
+Numbers. Input No. <span id="tme"></span>: 
+<input id="num"><button id="btn" onclick="add()">ENTER</button></p>
+<p id="three" style="display:none;"><button onclick="res()">Add</button>
+<input id="result"></p>
+
+</body>
+</html>
