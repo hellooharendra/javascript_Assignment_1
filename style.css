@@ -1,0 +1,31 @@
+.but{
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.but:hover{
+    font-size: large;
+}
+.si{
+    text-align: center;
+  
+}
+.heading{
+    background-color: antiquewhite;
+    color: red;
+    font-style: bold;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding:20px;
+}
+.heading:hover{
+    color: blue;
+}
+
+.input{
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+}
